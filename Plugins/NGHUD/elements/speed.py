@@ -95,13 +95,16 @@ class Widget(HUDWidget):
         status = self.get_speed_status(speed, limit)
         colors = self.get_status_colors(status)
         
-        # Add pulsing effect for excessive speed
+        # Add pulsing effect for excessive speed and approaching limit
         pulse_multiplier = 1.0
         if status == "excessive":
             pulse_multiplier = 0.7 + 0.3 * (math.sin(time.time() * 6) + 1) / 2
+        elif status == "over":
+            # Gentler pulse for "over" status
+            pulse_multiplier = 0.9 + 0.1 * (math.sin(time.time() * 3) + 1) / 2
         
         # Apply pulse to colors if needed
-        if status == "excessive":
+        if status in ["excessive", "over"]:
             border_color = Color(
                 int(colors["border"].r * pulse_multiplier),
                 int(colors["border"].g * pulse_multiplier), 
