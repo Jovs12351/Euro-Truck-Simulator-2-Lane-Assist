@@ -1,0 +1,55 @@
+# Ignore cache and log files
+cache
+model-cache
+**/__pycache__
+logs
+
+# Ignore global.lock file
+global.lock
+
+# Ignore Catalogue plugins
+CataloguePlugins
+
+# Ignore Python venv
+/venv
+
+# Ignore translations on the frontend
+/Interface/translations
+
+# Ignore settings
+**/settings.json
+/ETS2LA/global.json
+/ETS2LA/controls.json
+/ETS2LA/backend/settings/controls.json
+
+# Ignore Godot exports and export config
+/Visualization/ETS2LA-Visualisation/export_presets.cfg
+/Visualization/GoDot Export/*
+
+# Ignore Object Detection models
+/ETS2LA/plugins/ObjectDetection/models
+/plugins/ObjectDetection/models
+
+# Ignore Map data
+/ETS2LA/plugins/Map/data
+/ETS2LA/plugins/Map/GameData
+
+# Pycharm
+.idea
+
+# VSCode
+.vscode
+
+# Ignore End to End files
+/Data-Collection-End-To-End-Driving
+/End-To-End-Data-ID.txt
+
+# Submodules
+/Interface
+/Translations/old
+
+# Ignore start batch files
+start_dev.bat
+run_dev.bat
+start.bat
+run.bat

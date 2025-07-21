@@ -1,0 +1,44 @@
+windows-capture==1.3.6; platform_system == "Windows"
+winsdk; platform_system == "Windows"
+audioop-lts; python_version >= "3.13"
+opencv-contrib-python
+SimpleWindow>=1.0
+websockets==13.1
+umami-analytics
+textual==1.0.0
+beautifulsoup4
+pywebview==5.1
+opencv-python
+numpy==2.2.6
+pywin32==306
+torchvision
+sounddevice
+matplotlib
+pypresence
+setuptools
+screeninfo
+gitpython
+dearpygui
+bettercam
+langcodes
+zeroconf
+keyboard
+requests
+pyttsx3
+fastapi
+uvicorn
+pyproj
+psutil
+pygame
+orjson
+pynput
+pyyaml
+pydub
+scipy
+torch
+tqdm
+ftfy
+rich
+rpyc
+vdf
+mss
